@@ -1190,3 +1190,112 @@ ul { list-style: none; }
     grid-template-columns: 1fr;
   }
 }
+
+/* EXPERIENCE – VERTICAL FLOW */
+.experience-vertical {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+/* HEADER */
+.experience-header {
+  max-width: 680px;
+  margin-bottom: 90px;
+}
+
+.experience-pill {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #eef3ff;
+  color: var(--primary-color);
+}
+
+.experience-header h2 {
+  font-size: 2.8rem;
+  margin: 16px 0 12px;
+}
+
+.experience-header p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* LIST */
+.experience-list {
+  max-width: 760px;
+  position: relative;
+}
+
+/* subtle vertical guide */
+.experience-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.08),
+    rgba(0,0,0,0)
+  );
+}
+
+/* ITEM */
+.experience-item {
+  padding-left: 40px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+/* small node */
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+/* TEXT */
+.experience-item h3 {
+  font-size: 1.45rem;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.experience-meta {
+  display: block;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.experience-item p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .experience-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .experience-item {
+    padding-left: 30px;
+  }
+}
