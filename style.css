@@ -765,3 +765,96 @@ section::after {
   }
 }
 
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  z-index: 10000;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* Container for blobs */
+.hero-section {
+  position: relative;
+  overflow: hidden; /* Important so blobs don't cause scrollbars */
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px); /* This creates the soft glow */
+  opacity: 0.6;
+  z-index: 0; /* Behind content */
+  animation: blob-bounce 10s infinite ease-in-out alternate;
+}
+
+.blob-1 {
+  top: -10%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: rgba(0, 86, 179, 0.25); /* Primary Color Low Opacity */
+}
+
+.blob-2 {
+  bottom: -10%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(96, 165, 250, 0.25); /* Secondary Color */
+  animation-delay: -2s;
+}
+
+.blob-3 {
+  top: 40%;
+  left: 40%;
+  width: 300px;
+  height: 300px;
+  background: rgba(100, 200, 255, 0.2);
+  animation-delay: -4s;
+}
+
+@keyframes blob-bounce {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(40px, -40px) scale(1.1); }
+}
+
+/* Hide on mobile to save battery */
+@media (max-width: 768px) {
+  .blob { display: none; }
+}
+
+.skill-card-modern, .project-showcase {
+  position: relative;
+  overflow: hidden; /* Keeps the light inside the card */
+}
+
+/* The light beam */
+.skill-card-modern::after, .project-showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.3), /* The shine color */
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+/* Trigger on hover */
+.skill-card-modern:hover::after, .project-showcase:hover::after {
+  left: 100%;
+  transition: 0.7s ease-in-out;
+}
