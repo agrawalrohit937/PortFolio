@@ -858,3 +858,9 @@ section::after {
   left: 100%;
   transition: 0.7s ease-in-out;
 }
+
+.project-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Add this so 3 buttons don't break the layout */
+}
