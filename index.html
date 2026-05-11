@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rohit Agrawal | Data Scientist Portfolio</title>
+  <title>Rohit Agrawal | Data Science & AI Engineer</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -13,12 +13,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+<body>
 <div class="page-loader">
   <span></span>
 </div>
-<body>
+
 <div class="scroll-progress"></div>
 <div class="cursor-glow"></div>
+<div class="cursor-dot"></div>
 
 <!-- ================= HEADER ================= -->
 <header class="header">
@@ -47,22 +49,28 @@
 
 <!-- ================= HERO ================= -->
 <section id="home" class="hero-section">
+  <canvas id="particles-canvas"></canvas>
+
   <div class="background-blobs">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
   </div>
+
   <div class="container hero-wrapper">
 
     <div class="hero-content fade-in-up">
-      <span class="hero-badge">Open to Internships & Applied ML Opportunities</span>
+      <span class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Data Science, AI Engineering &amp; ML Opportunities
+      </span>
 
       <h1 class="hero-title">
-        Hi, I’m <span class="highlight">Rohit Agrawal</span>
+        Hi, I'm <span class="highlight" data-text="Rohit Agrawal">Rohit Agrawal</span>
       </h1>
 
       <p class="hero-tagline">
-        Applied Machine Learning • Data Science • Analytics
+        Data Science • Machine Learning • AI Engineering
       </p>
 
       <h2 class="hero-subtitle">
@@ -70,98 +78,123 @@
       </h2>
 
       <p class="hero-description">
-        I design reliable, interpretable AI systems that convert complex data into
-        real-world decisions across healthcare, analytics, and security-focused
-        machine learning.
+        I build scalable AI systems and intelligent backend applications using
+        Machine Learning, NLP, LLMs, and FastAPI — transforming complex data
+        into real-world automation and decision-making solutions.
       </p>
 
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="Resume.pdf" download class="btn btn-outline">Download Resume</a>
+        <a href="#projects" class="btn btn-primary ripple-btn">View Projects</a>
+        <a href="Resume.pdf" download class="btn btn-outline ripple-btn">Download Resume</a>
       </div>
 
       <div class="hero-metrics">
-        <div>
-          <strong>20+</strong>
-          <span>ML & Analytics Projects</span>
+        <div class="metric-item">
+          <strong class="counter" data-target="15" data-suffix="+">0+</strong>
+          <span>AI &amp; Full-Stack Projects</span>
         </div>
-        <div>
-          <strong>Python</strong>
-          <span>Primary Stack</span>
+        <div class="metric-item">
+          <strong>FastAPI</strong>
+          <span>Backend Architecture</span>
         </div>
-        <div>
-          <strong>XAI</strong>
-          <span>Explainable AI</span>
+        <div class="metric-item">
+          <strong>LLMs</strong>
+          <span>AI Workflows</span>
         </div>
       </div>
     </div>
 
     <div class="hero-visual fade-in-up delay-200">
       <div class="hero-image">
+        <div class="image-glow-ring"></div>
         <img src="rk2.png" alt="Rohit Agrawal Profile">
       </div>
     </div>
 
   </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+    <span>Scroll</span>
+  </div>
 </section>
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="about-section">
+  <div class="dot-grid-bg"></div>
   <div class="container">
 
-    <h2 class="section-title">About Me</h2>
+    <div class="section-header">
+      <span class="badge scramble-badge">ABOUT ME</span>
+      <h2 class="section-title">Building Intelligent AI Systems for Real-World Applications</h2>
+      <p class="section-subtitle">
+        Combining AI engineering, backend development,
+        and machine learning to create scalable,
+        production-ready intelligent systems.
+      </p>
+    </div>
 
     <div class="about-wrapper">
 
       <div class="about-text reveal">
         <span class="about-tag">Who I Am</span>
-        <h3>Designing Trustworthy AI, Not Just Models.</h3>
+
+        <h3>Data Scientist • ML Engineer • AI Systems Builder</h3>
 
         <p>
-          I’m a Data Science & Machine Learning practitioner focused on building
-          <strong>reliable, interpretable AI systems</strong> that support
-          real-world decision making.
+          I'm a Data Science and Machine Learning engineer passionate about
+          building scalable AI applications that solve real-world problems
+          through intelligent automation, analytics, and backend systems.
         </p>
 
         <p>
-          My experience spans <strong>predictive modeling</strong>,
-          <strong>classification</strong>, <strong>risk analysis</strong>, and
-          <strong>explainable AI</strong>, with applications across
-          <strong>healthcare analytics</strong>,
-          <strong>business intelligence</strong>, and
-          <strong>AI-driven cybersecurity</strong>.
+          My work spans <strong>NLP</strong>,
+          <strong>predictive analytics</strong>,
+          <strong>FastAPI backend development</strong>,
+          <strong>LLM-powered applications</strong>,
+          and <strong>Explainable AI</strong>,
+          with experience across healthcare AI,
+          recruitment intelligence,
+          cybersecurity, and data-driven platforms.
         </p>
 
         <p>
-          Beyond model building, I work on
-          <strong>end-to-end ML pipelines</strong> —
-          from data preprocessing and optimization to visualization,
-          deployment, and monitoring.
+          Beyond model development, I build complete AI pipelines —
+          from preprocessing and semantic analysis
+          to scalable APIs, deployment,
+          cloud integration, and production-ready architecture.
         </p>
 
         <div class="about-meta">
           <div><i class="fa-solid fa-graduation-cap"></i> Invertis University</div>
-          <div><i class="fa-solid fa-code"></i> B.Tech (CSE)</div>
-          <div><i class="fa-solid fa-location-dot"></i> Bareilly, India</div>
+          <div><i class="fa-solid fa-code"></i> B.Tech Computer Science Engineering</div>
+          <div><i class="fa-solid fa-location-dot"></i> Bareilly, Uttar Pradesh, India</div>
         </div>
       </div>
 
       <div class="about-cards reveal">
-        <div class="about-card">
-          <h2>10+</h2>
-          <p>End-to-End ML Projects</p>
+        <div class="about-card tilt-card">
+          <div class="card-shine"></div>
+          <h2 class="counter" data-target="15" data-suffix="+">0+</h2>
+          <p>AI &amp; Full-Stack Projects</p>
         </div>
-        <div class="about-card">
-          <h2>AI</h2>
-          <p>Healthcare · BI · Security</p>
+        <div class="about-card tilt-card">
+          <div class="card-shine"></div>
+          <h2>FastAPI</h2>
+          <p>Backend Architecture</p>
         </div>
-        <div class="about-card">
-          <h2>Python</h2>
-          <p>Primary Development Stack</p>
+        <div class="about-card tilt-card">
+          <div class="card-shine"></div>
+          <h2>LLMs</h2>
+          <p>NLP &amp; AI Workflows</p>
         </div>
-        <div class="about-card">
-          <h2>BI</h2>
-          <p>Data Visualization</p>
+        <div class="about-card tilt-card">
+          <div class="card-shine"></div>
+          <h2>XAI</h2>
+          <p>Explainable AI Systems</p>
         </div>
       </div>
 
@@ -172,55 +205,93 @@
 <!-- ================= SKILLS ================= -->
 <section id="skills" class="skills-section">
   <div class="container">
-    <h2 class="section-title">Expertise</h2>
+
+    <div class="section-header">
+      <span class="badge scramble-badge">TECH STACK</span>
+      <h2 class="section-title">Core Expertise</h2>
+      <p class="section-subtitle">
+        Combining machine learning, backend engineering, analytics,
+        and scalable AI systems to build production-ready intelligent applications.
+      </p>
+    </div>
 
     <div class="grid-skills">
 
-      <div class="skill-card-modern reveal">
-        <i class="fa-solid fa-brain skill-icon"></i>
-        <h3>Machine Learning</h3>
-        <p>Predictive modeling and supervised learning.</p>
+      <div class="skill-card-modern reveal tilt-card">
+        <div class="card-shine"></div>
+        <div class="skill-icon-wrap">
+          <i class="fa-solid fa-brain skill-icon"></i>
+        </div>
+        <h3>Machine Learning &amp; AI</h3>
+        <p>Building predictive models, intelligent systems, and explainable AI solutions using modern ML frameworks.</p>
         <div class="mini-tags">
-          <span>XGBoost</span><span>Random Forest</span>
-          <span>KNN</span><span>Scikit-learn</span>
+          <span>Scikit-learn</span><span>XGBoost</span><span>TensorFlow</span>
+          <span>NLP</span><span>SHAP</span><span>LIME</span>
         </div>
       </div>
 
-      <div class="skill-card-modern reveal">
-        <i class="fa-solid fa-network-wired skill-icon"></i>
-        <h3>Deep Learning & XAI</h3>
-        <p>Neural networks with explainability.</p>
+      <div class="skill-card-modern reveal tilt-card">
+        <div class="card-shine"></div>
+        <div class="skill-icon-wrap">
+          <i class="fa-solid fa-chart-line skill-icon"></i>
+        </div>
+        <h3>Data Science &amp; Analytics</h3>
+        <p>Extracting insights through preprocessing, visualization, statistical analysis, and predictive analytics.</p>
         <div class="mini-tags">
-          <span>CNN</span><span>TensorFlow</span>
-          <span>SHAP</span><span>LIME</span>
+          <span>Pandas</span><span>NumPy</span><span>PySpark</span>
+          <span>EDA</span><span>Feature Engineering</span><span>Power BI</span>
         </div>
       </div>
 
-      <div class="skill-card-modern reveal">
-        <i class="fa-solid fa-chart-simple skill-icon"></i>
-        <h3>Data Analysis & Visualization</h3>
-        <p>Insight discovery and storytelling.</p>
+      <div class="skill-card-modern reveal tilt-card">
+        <div class="card-shine"></div>
+        <div class="skill-icon-wrap">
+          <i class="fa-solid fa-server skill-icon"></i>
+        </div>
+        <h3>Backend Development</h3>
+        <p>Developing scalable APIs and backend architectures for AI-driven and production-grade applications.</p>
         <div class="mini-tags">
-          <span>Pandas</span><span>NumPy</span>
-          <span>Seaborn</span><span>Power BI</span>
+          <span>FastAPI</span><span>REST APIs</span><span>JWT Auth</span>
+          <span>PostgreSQL</span><span>MongoDB</span><span>Docker</span>
         </div>
       </div>
 
-      <div class="skill-card-modern reveal">
-        <i class="fa-solid fa-shield-halved skill-icon"></i>
-        <h3>AI-Driven Cybersecurity</h3>
-        <p>Threat detection and anomaly analysis.</p>
+      <div class="skill-card-modern reveal tilt-card">
+        <div class="card-shine"></div>
+        <div class="skill-icon-wrap">
+          <i class="fa-solid fa-chart-simple skill-icon"></i>
+        </div>
+        <h3>Visualization &amp; BI</h3>
+        <p>Creating dashboards, analytical reports, and visual storytelling systems for decision-making.</p>
+        <div class="mini-tags">
+          <span>Matplotlib</span><span>Seaborn</span><span>Plotly</span>
+          <span>Power BI</span><span>Dashboarding</span>
+        </div>
+      </div>
+
+      <div class="skill-card-modern reveal tilt-card">
+        <div class="card-shine"></div>
+        <div class="skill-icon-wrap">
+          <i class="fa-solid fa-cloud skill-icon"></i>
+        </div>
+        <h3>Deployment &amp; Cloud</h3>
+        <p>Deploying ML systems and APIs with modern workflows, version control, and cloud-ready infrastructure.</p>
+        <div class="mini-tags">
+          <span>Git</span><span>GitHub</span><span>CI/CD</span>
+          <span>AWS Basics</span><span>GCP Basics</span><span>Streamlit</span>
+        </div>
+      </div>
+
+      <div class="skill-card-modern reveal tilt-card">
+        <div class="card-shine"></div>
+        <div class="skill-icon-wrap">
+          <i class="fa-solid fa-shield-halved skill-icon"></i>
+        </div>
+        <h3>AI &amp; Security Applications</h3>
+        <p>Applying machine learning techniques to intelligent automation, anomaly detection, and cybersecurity-oriented systems.</p>
         <div class="mini-tags">
           <span>Phishing Detection</span><span>Anomaly Detection</span>
-        </div>
-      </div>
-
-      <div class="skill-card-modern reveal">
-        <i class="fa-solid fa-server skill-icon"></i>
-        <h3>Deployment</h3>
-        <p>Taking ML systems to production.</p>
-        <div class="mini-tags">
-          <span>Flask</span><span>Streamlit</span><span>GitHub</span>
+          <span>Risk Analysis</span><span>Automation</span>
         </div>
       </div>
 
@@ -233,18 +304,73 @@
   <div class="container">
 
     <div class="section-header">
-      <span class="badge">PORTFOLIO</span>
+      <span class="badge scramble-badge">PORTFOLIO</span>
       <h2 class="section-title">Featured Case Studies</h2>
       <p class="section-subtitle">
-        Applied projects demonstrating analytics, machine learning,
-        explainability, and deployment.
+        Applied projects demonstrating analytics, machine learning, explainability, and deployment.
       </p>
     </div>
 
-    <!-- PROJECT 1 -->
+    <!-- CAREERPILOT AI -->
     <div class="project-showcase reveal">
       <div class="project-visual">
         <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+            <div class="browser-url">careerpilotai.vercel.app</div>
+          </div>
+          <img src="careerpilotai.png" alt="CareerPilotAI Platform">
+        </div>
+      </div>
+
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-category">AI RECRUITMENT · NLP · LLM · FASTAPI</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h3>CareerPilotAI — AI Resume Screening &amp; Career Intelligence Platform</h3>
+        <p class="project-desc">
+          Developed a full-stack AI recruitment and career intelligence platform
+          that automates resume screening, ATS scoring, semantic candidate matching,
+          skill-gap analysis, recruiter workflows, and AI-powered mock interviews
+          using NLP, Machine Learning, LLMs, FastAPI, and a hybrid BERT + TF-IDF engine.
+          Integrated browser-based integrity detection, recruiter analytics dashboard,
+          GitHub profile intelligence, and multi-provider LLM fallback architecture
+          for scalable and reliable AI-driven hiring workflows.
+        </p>
+        <div class="project-highlights">
+          <div><strong class="counter" data-target="92" data-suffix="%">0%</strong><span>ATS Accuracy</span></div>
+          <div><strong>Hybrid AI</strong><span>BERT + TF-IDF</span></div>
+          <div><strong>4-Layer</strong><span>Integrity Detection</span></div>
+        </div>
+        <div class="tech-stack-list">
+          <span class="tech-tag">FastAPI</span><span class="tech-tag">React</span>
+          <span class="tech-tag">Sentence-BERT</span><span class="tech-tag">TF-IDF</span>
+          <span class="tech-tag">MongoDB Atlas</span><span class="tech-tag">JWT Auth</span>
+          <span class="tech-tag">Docker</span><span class="tech-tag">TensorFlow.js</span>
+          <span class="tech-tag">MediaPipe</span><span class="tech-tag">LLMs</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://resume-screening-system-lyart.vercel.app/" target="_blank" class="btn btn-primary ripple-btn">
+            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="https://github.com/agrawalrohit937/Resume-Screening-System" target="_blank" class="btn btn-outline ripple-btn">View Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEART ATTACK -->
+    <div class="project-showcase reveal">
+      <div class="project-visual">
+        <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+            <div class="browser-url">heart-attack-prediction.onrender.com</div>
+          </div>
           <img src="heart attack.png" alt="Heart Attack Prediction">
         </div>
       </div>
@@ -254,53 +380,44 @@
           <span class="project-category">HEALTHCARE AI · XAI · FEDERATED LEARNING</span>
           <span class="project-year">2025</span>
         </div>
-
         <h3>Heart Attack Risk Prediction System</h3>
-
         <p class="project-desc">
           Designed a medically interpretable healthcare AI system combining
-          ensemble learning, SHAP & LIME explainability,
+          ensemble learning, SHAP &amp; LIME explainability,
           federated learning concepts, and Power BI dashboards
           for privacy-preserving clinical decision support.
         </p>
-
         <div class="project-highlights">
-          <div><strong>86.5%</strong><span>Accuracy</span></div>
-          <div><strong>0.91+</strong><span>ROC-AUC</span></div>
+          <div><strong class="counter" data-target="86.5" data-suffix="%" data-decimal="true">0%</strong><span>Accuracy</span></div>
+          <div><strong class="counter" data-target="0.91" data-suffix="+" data-decimal="true" data-places="2">0.00+</strong><span>ROC-AUC</span></div>
           <div><strong>XAI</strong><span>SHAP · LIME</span></div>
         </div>
-
         <div class="tech-stack-list">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">XGBoost</span>
-          <span class="tech-tag">Federated Learning</span>
-          <span class="tech-tag">Power BI</span>
+          <span class="tech-tag">Python</span><span class="tech-tag">XGBoost</span>
+          <span class="tech-tag">Federated Learning</span><span class="tech-tag">Power BI</span>
         </div>
-
-        <!-- <div class="project-actions">
-          <a href="https://heart-attack-prediction-ja41.onrender.com/" target="_blank" class="btn btn-primary">
-            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-          <a href="#" class="btn btn-outline">Research Notes</a>
-        </div> -->
         <div class="project-actions">
-          <a href="https://heart-attack-prediction-dgzu.onrender.com" target="_blank" class="btn btn-primary">
+          <a href="https://heart-attack-prediction-dgzu.onrender.com" target="_blank" class="btn btn-primary ripple-btn">
             Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
-          
-          <a href="https://app.powerbi.com/groups/me/reports/dac6db0c-0cf6-4740-8e84-f7b142178f71?pbi_source=desktop" target="_blank" class="btn btn-outline">
+          <a href="https://app.powerbi.com/groups/me/reports/dac6db0c-0cf6-4740-8e84-f7b142178f71?pbi_source=desktop" target="_blank" class="btn btn-outline ripple-btn">
             <i class="fa-solid fa-chart-simple"></i> Power BI
           </a>
-
-          <a href="https://medium.com/@agrawalrohit937/building-a-responsible-heart-attack-risk-prediction-system-using-ml-xai-federated-learning-4543996d16e8" class="btn btn-outline">Research Notes</a>
+          <a href="https://medium.com/@agrawalrohit937/building-a-responsible-heart-attack-risk-prediction-system-using-ml-xai-federated-learning-4543996d16e8" class="btn btn-outline ripple-btn">Research Notes</a>
         </div>
       </div>
     </div>
 
-    <!-- PROJECT 2 -->
+    <!-- SENTIMENT ANALYSIS -->
     <div class="project-showcase reverse reveal">
       <div class="project-visual">
         <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+            <div class="browser-url">sentiment-analysis.onrender.com</div>
+          </div>
           <img src="sentiment analysis.png" alt="Sentiment Analysis">
         </div>
       </div>
@@ -310,107 +427,139 @@
           <span class="project-category">NATURAL LANGUAGE PROCESSING</span>
           <span class="project-year">2024</span>
         </div>
-
-        <h3>Sentiment & Emotion Analysis System</h3>
-
+        <h3>Sentiment &amp; Emotion Analysis System</h3>
         <p class="project-desc">
           Built an end-to-end NLP pipeline for emotion and sentiment classification
           using TF-IDF features and ensemble ML models,
           optimized for macro F1 performance.
         </p>
-
         <div class="tech-stack-list">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">NLP</span>
-          <span class="tech-tag">TF-IDF</span>
-          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">Python</span><span class="tech-tag">NLP</span>
+          <span class="tech-tag">TF-IDF</span><span class="tech-tag">Flask</span>
         </div>
-
         <div class="project-actions">
-          <a href="https://sentiment-analysis-gkjy.onrender.com" target="_blank" class="btn btn-primary">
+          <a href="https://sentiment-analysis-gkjy.onrender.com" target="_blank" class="btn btn-primary ripple-btn">
             Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
-          <a href="https://medium.com/@agrawalrohit937/from-text-to-emotion-how-i-built-an-advanced-sentiment-classifier-in-python-0162d4d97a94" class="btn btn-outline">Technical Write-up</a>
+          <a href="https://medium.com/@agrawalrohit937/from-text-to-emotion-how-i-built-an-advanced-sentiment-classifier-in-python-0162d4d97a94" class="btn btn-outline ripple-btn">Technical Write-up</a>
         </div>
       </div>
     </div>
-      <div class="project-showcase reveal">
-    <div class="project-visual">
-      <div class="browser-mockup">
-        <img src="diabetes.png" alt="Diabetes Risk Prediction">
+
+    <!-- DIABETES -->
+    <div class="project-showcase reveal">
+      <div class="project-visual">
+        <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+            <div class="browser-url">diabetesprediction.onrender.com</div>
+          </div>
+          <img src="diabetes.png" alt="Diabetes Risk Prediction">
+        </div>
+      </div>
+
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-category">HEALTHCARE ANALYTICS</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h3>Diabetes Risk Prediction System</h3>
+        <p class="project-desc">
+          Developed a machine learning–based healthcare analytics system
+          to assess diabetes risk using clinical and lifestyle features,
+          enabling early, data-driven intervention and decision support.
+        </p>
+        <div class="project-highlights">
+          <div><strong>Imbalanced</strong><span>Data Handling</span></div>
+          <div><strong class="counter" data-target="89" data-suffix="%">0%</strong><span>F1 Score</span></div>
+          <div><strong>Real-time</strong><span>Prediction</span></div>
+        </div>
+        <div class="tech-stack-list">
+          <span class="tech-tag">Python</span><span class="tech-tag">XGBoost</span>
+          <span class="tech-tag">SMOTE</span><span class="tech-tag">Streamlit</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://diabetesprediction-iqwl.onrender.com/" target="_blank" class="btn btn-primary ripple-btn">
+            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="https://github.com/agrawalrohit937/DiabetesPrediction" class="btn btn-outline ripple-btn">View Code</a>
+        </div>
       </div>
     </div>
 
-    <div class="project-info">
-      <div class="project-meta">
-        <span class="project-category">HEALTHCARE ANALYTICS</span>
-        <span class="project-year">2024</span>
-      </div>
-
-      <h3>Diabetes Risk Prediction System</h3>
-
-      <p class="project-desc">
-        Developed a machine learning–based healthcare analytics system
-        to assess diabetes risk using clinical and lifestyle features,
-        enabling early, data-driven intervention and decision support.
-      </p>
-
-      <div class="project-highlights">
-        <div><strong>Imbalanced</strong><span>Data Handling</span></div>
-        <div><strong>89%</strong><span>F1 Score</span></div>
-        <div><strong>Real-time</strong><span>Prediction</span></div>
-      </div>
-
-      <div class="tech-stack-list">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">XGBoost</span>
-        <span class="tech-tag">SMOTE</span>
-        <span class="tech-tag">Streamlit</span>
-      </div>
-
-      <div class="project-actions">
-        <a href="https://diabetesprediction-iqwl.onrender.com/" target="_blank" class="btn btn-primary">
-          Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-
-        <a href="https://github.com/agrawalrohit937/DiabetesPrediction" class="btn btn-outline">View Code</a>
-      </div>
-    </div>
   </div>
-  </div>
-
-  <!-- PROJECT 3 -->
-
 </section>
 
 <!-- ================= EXPERIENCE ================= -->
 <section id="experience" class="experience-vertical">
   <div class="container">
     <header class="experience-header">
-      <span class="experience-pill">JOURNEY</span>
-      <h2>My Learning & Professional Path</h2>
+      <span class="experience-pill">EXPERIENCE</span>
+      <h2>Experience &amp; Professional Journey</h2>
     </header>
 
     <div class="experience-list">
-
       <div class="experience-item reveal">
-        <h3>Industrial Training Institute (ITI) – ICTSM</h3>
-        <span class="experience-meta">Aug 2023 – Jul 2025</span>
-        <p>Hardware, OS deployment, system maintenance, and networking fundamentals.</p>
+        <div class="exp-dot-wrap">
+          <div class="exp-dot"></div>
+          <div class="exp-dot-pulse"></div>
+        </div>
+        <div class="exp-content">
+          <h3>Python Backend Developer Intern – MakaanMitra</h3>
+          <span class="experience-meta">Feb 2026 – Present</span>
+          <p>Building scalable backend systems and AI-integrated solutions using FastAPI, PostgreSQL, and modern API architecture for a real estate and tenant management platform.</p>
+        </div>
       </div>
 
       <div class="experience-item reveal">
-        <h3>Google AI–ML Virtual Internship</h3>
-        <span class="experience-meta">Apr 2025 – Jun 2025</span>
-        <p>End-to-end ML workflows and responsible AI practices.</p>
+        <div class="exp-dot-wrap">
+          <div class="exp-dot"></div>
+          <div class="exp-dot-pulse"></div>
+        </div>
+        <div class="exp-content">
+          <h3>Machine Learning &amp; Data Science Virtual Intern – EduSkills Academy (AICTE)</h3>
+          <span class="experience-meta">Jan 2026 – Mar 2026</span>
+          <p>Completed a 10-week AICTE EduSkills virtual internship focused on machine learning, data science, model development, visualization, and deployment using real-world datasets.</p>
+        </div>
       </div>
 
       <div class="experience-item reveal">
-        <h3>Altair Data Science Master Virtual Internship</h3>
-        <span class="experience-meta">Oct 2025 – Dec 2025</span>
-        <p>Applied analytics and industry-grade data workflows.</p>
+        <div class="exp-dot-wrap">
+          <div class="exp-dot"></div>
+          <div class="exp-dot-pulse"></div>
+        </div>
+        <div class="exp-content">
+          <h3>Altair Data Science Master Virtual Internship</h3>
+          <span class="experience-meta">Oct 2025 – Dec 2025</span>
+          <p>Worked on applied analytics, data visualization, and industry-oriented data science workflows using real-world business datasets.</p>
+        </div>
       </div>
 
+      <div class="experience-item reveal">
+        <div class="exp-dot-wrap">
+          <div class="exp-dot"></div>
+          <div class="exp-dot-pulse"></div>
+        </div>
+        <div class="exp-content">
+          <h3>Google AI-ML Virtual Internship</h3>
+          <span class="experience-meta">Apr 2025 – Jun 2025</span>
+          <p>Gained hands-on exposure to end-to-end machine learning workflows, model development, and responsible AI practices.</p>
+        </div>
+      </div>
+
+      <div class="experience-item reveal">
+        <div class="exp-dot-wrap">
+          <div class="exp-dot"></div>
+          <div class="exp-dot-pulse"></div>
+        </div>
+        <div class="exp-content">
+          <h3>Industrial Training Institute (ITI) – ICTSM</h3>
+          <span class="experience-meta">Aug 2023 – Jul 2025</span>
+          <p>Developed foundational technical skills in computer hardware, operating systems, networking, and system maintenance.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -418,57 +567,58 @@
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="contact-clean">
   <div class="container">
-
     <div class="contact-header">
       <span class="contact-pill">CONTACT</span>
-      <h2>Let’s Collaborate</h2>
-      <p>
-        Open to data science internships, research roles,
-        and applied machine learning collaborations.
-      </p>
+      <h2>Let's Collaborate</h2>
+      <p>Open to Data Science, AI Engineering, Backend Development, Machine Learning, and Intelligent Systems opportunities.</p>
     </div>
 
     <div class="contact-layout reveal">
-
       <div class="contact-left">
         <div class="contact-block">
           <span class="label">Email</span>
           <a href="mailto:agrawalrohit937@gmail.com">agrawalrohit937@gmail.com</a>
         </div>
-
         <div class="contact-block">
           <span class="label">Location</span>
           <p>Bareilly, Uttar Pradesh, India</p>
         </div>
-
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/rohit-aggrawal"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/agrawalrohit937"><i class="fa-brands fa-github"></i></a>
-          <a href="https://medium.com/@agrawalrohit937"><i class="fa-brands fa-medium"></i></a>
+          <a href="https://www.linkedin.com/in/rohit-aggrawal" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/agrawalrohit937" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://medium.com/@agrawalrohit937" class="social-link" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
         </div>
       </div>
 
       <div class="contact-right">
         <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="76dd62e3-7868-4a17-8108-b66ca8f1d915">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="4" placeholder="Tell me about your project or collaboration idea..." required></textarea>
-          <button type="submit">Send Message</button>
+          <div class="form-field">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <div class="field-line"></div>
+          </div>
+          <div class="form-field">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <div class="field-line"></div>
+          </div>
+          <div class="form-field">
+            <textarea name="message" rows="4" placeholder="Tell me about your project or collaboration idea..." required></textarea>
+            <div class="field-line"></div>
+          </div>
+          <button type="submit" class="ripple-btn">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
         </form>
       </div>
-
     </div>
   </div>
 </section>
 
 <footer class="footer-clean">
-  <p>© 2026 Rohit Agrawal. Built with Python & Coffee.</p>
+  <p>© 2026 Rohit Agrawal. Built with Python &amp; Coffee.</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
